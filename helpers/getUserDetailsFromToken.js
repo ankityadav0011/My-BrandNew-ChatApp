@@ -8,6 +8,9 @@ const getUserDetailsFromToken = async (token) => {
             logout: true
         };
     }
+    
+    
+        console.log("JWT Secret Key:", process.env.JWT_SECRET_KEY);  // Log to check if the key is loaded
 
     try {
         // Decoding the token
