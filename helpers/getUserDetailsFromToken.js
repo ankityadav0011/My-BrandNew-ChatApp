@@ -1,6 +1,6 @@
 const jwt = require('jsonwebtoken');
 const UserModel = require('../models/UserModel');
-
+require('dotenv').config();
 const getUserDetailsFromToken = async (token) => {
     if (!token) {
         return {
