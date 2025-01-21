@@ -12,7 +12,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
     cors: {
-        origin: 'https://sensational-toffee-70db83.netlify.app/',
+        origin:['https://sensational-toffee-70db83.netlify.app','https://sensational-toffee-70db83.netlify.app/'],
         credentials: true
     }
 });
