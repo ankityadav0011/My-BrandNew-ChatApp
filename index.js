@@ -10,7 +10,7 @@ const {app,server} = require("./socket/index")
 
 
 app.use(cors({
-    origin:process.env.FRONTEND_URL,
+    origin:https://famous-dolphin-b4f33e.netlify.app/,
     credentials:true,
 }))
 
