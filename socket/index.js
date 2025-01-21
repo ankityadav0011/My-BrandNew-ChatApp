@@ -14,7 +14,9 @@ const io = new Server(server, {
     cors: {
         origin:['https://sensational-toffee-70db83.netlify.app','https://sensational-toffee-70db83.netlify.app/'],
         credentials: true
-    }
+    },
+    pingTimeout: 60000,  // Increase timeout to 1 minute (or more)
+    pingInterval: 25000
 });
 
 /*** Online user management ***/
