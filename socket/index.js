@@ -12,7 +12,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
     cors: {
-        origin:'https://sensational-toffee-70db83.netlify.app',
+        origin:'https://vermillion-mandazi-43c9db.netlify.app',
         credentials: true
     },
     pingTimeout: 60000,  // Increase timeout to 1 minute (or more)
