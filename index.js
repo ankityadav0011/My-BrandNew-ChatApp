@@ -11,7 +11,7 @@ const {app,server} = require("./socket/index")
 
 
 app.use(cors({
-    origin:'https://sensational-toffee-70db83.netlify.app',
+    origin:'https://vermillion-mandazi-43c9db.netlify.app/',
     credentials:true,
 }))
 
