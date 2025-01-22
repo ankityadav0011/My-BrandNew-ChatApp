@@ -1,4 +1,5 @@
 const express = require('express')
+require('dotenv').config();
 const cors = require('cors')
 require('dotenv').config()
 const connectDB = require("./config/connectDB")
@@ -6,11 +7,11 @@ const router = require("./routes/index")
 const cookiesParser = require("cookie-parser")
 
 const {app,server} = require("./socket/index")
-require('dotenv').config();
+
 
 
 app.use(cors({
-    origin:['https://sensational-toffee-70db83.netlify.app', 'https://sensational-toffee-70db83.netlify.app/'],
+    origin:'*',
     credentials:true,
 }))
 
