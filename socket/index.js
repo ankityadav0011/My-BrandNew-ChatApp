@@ -12,7 +12,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
     cors: {
-        origin:'https://creative-pothos-f48286.netlify.app',
+        origin:'https://cool-haupia-36c6cc.netlify.app',
         credentials: true
     },
     pingTimeout: 60000,  // Increase timeout to 1 minute (or more)
